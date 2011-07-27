@@ -1,0 +1,18 @@
+= DESCRIPTION:
+
+Installs server components required for CIAPI-in-a-box to run
+
+= REQUIREMENTS:
+
+* utilities, and sys_monitoring cookbooks
+
+= USAGE:
+
+Designed to be run within a RightScale ServerTemplate.
+
+Boot Scripts
+  * default - Downloads and configures all the CIAPI-in-a-box components
+
+Operational Scripts
+  * update_RESTWebServices - downloads and configures the RESTWebservices
+  * update_CIAPI.docs - downloads and configures the CIAPI.docs
