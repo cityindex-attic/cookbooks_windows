@@ -31,7 +31,7 @@
         "ciapi_in_a_box::update_RESTWebServices",
         "ciapi_in_a_box::CIAPI.docs"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
@@ -62,7 +62,7 @@
         "ciapi_in_a_box::update_RESTWebServices",
         "ciapi_in_a_box::CIAPI.docs"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
@@ -77,7 +77,7 @@
         "ciapi_in_a_box::default",
         "ciapi_in_a_box::update_RESTWebServices"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
@@ -92,7 +92,7 @@
         "ciapi_in_a_box::default",
         "ciapi_in_a_box::update_RESTWebServices"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
@@ -107,7 +107,7 @@
         "ciapi_in_a_box::default",
         "ciapi_in_a_box::CIAPI.docs"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
@@ -122,7 +122,7 @@
         "ciapi_in_a_box::default",
         "ciapi_in_a_box::CIAPI.docs"
       ],
-      "required": "required",
+      "required": "optional",
       "choice": [
 
       ],
