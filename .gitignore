@@ -2,3 +2,5 @@
 .rake_test_cache
 .idea
 nbproject
+
+.chef/knife.rb
