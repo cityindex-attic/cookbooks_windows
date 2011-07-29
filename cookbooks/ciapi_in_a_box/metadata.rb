@@ -25,38 +25,18 @@ attribute "ciapi_in_a_box/svn_password",
   :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::update_RESTWebServices", "ciapi_in_a_box::CIAPI.docs"],
   :required => "required"
   
+attribute "ciapi_in_a_box/svn_manifest_url",
+  :display_name => "SVN url of location where version manifest is kept",
+  :description => "The manifest specifies the collection of component versions that should be installed on this server. eg: https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/as_live.manifest.json or https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/bleeding_edge.manifest.json",
+  :default => "https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/as_live.manifest.json",
+  :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::update_RESTWebServices"],
+  :required => "optional"
+    
 attribute "ciapi_in_a_box/install_dir",
   :display_name => "Base folder to install all components in",
   :description => "Base folder to install all components in (eg: C:\Websites)",
   :default => "C:\\Websites",
   :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::update_RESTWebServices", "ciapi_in_a_box::CIAPI.docs"],
   :required => "optional"
-  
-attribute "ciapi_in_a_box/RESTWebServices/svn_url",
-  :display_name => "SVN url of location where installers are kept",
-  :description => "Versioned binaries are expected to be at this location",
-  :default => "https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/RestWebServices",
-  :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::update_RESTWebServices"],
-  :required => "optional"
-  
-attribute "ciapi_in_a_box/RESTWebServices/version",
-  :display_name => "RESTWebServices version to install",
-  :description => "The version of RESTWebServices to install",
-  :default => "RESTWebservices.0.834",
-  :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::update_RESTWebServices"],
-  :required => "optional"
-  
- attribute "ciapi_in_a_box/CIAPI.docs/version",
-  :display_name => "CIAPI.docs version to install",
-  :description => "The version of CIAPI.docs to install",
-  :default => "CIAPI.docs.0.588",
-  :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::CIAPI.docs"],
-  :required => "optional"
 
- attribute "ciapi_in_a_box/CIAPI.docs/svn_url",
-  :display_name => "SVN url of location where installers are kept",
-  :description => "Versioned binaries are expected to be at this location",
-  :default => "https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/CIAPI.docs",
-  :recipes => ["ciapi_in_a_box::default", "ciapi_in_a_box::CIAPI.docs"],
-  :required => "optional"
 
