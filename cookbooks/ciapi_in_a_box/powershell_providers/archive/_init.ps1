@@ -18,17 +18,3 @@
 # LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-# loads the demo database from cookbook-relative backup file.
-blog_engine_database "BlogEngine" do
-  machine_type = @node[:kernel][:machine]
-
-  backup_dir_path @node[:db_sqlserver][:backup][:database_backup_dir]
-  backup_file_name_format @node[:db_sqlserver][:backup][:backup_file_name_format]
-  existing_backup_file_name_pattern @node[:db_sqlserver][:backup][:existing_backup_file_name_pattern]
-  server_name @node[:db_sqlserver][:server_name]
-  force_restore false
-  max_old_backups_to_keep @node[:db_sqlserver][:backup][:backups_to_keep]
-
-  action :backup
-end

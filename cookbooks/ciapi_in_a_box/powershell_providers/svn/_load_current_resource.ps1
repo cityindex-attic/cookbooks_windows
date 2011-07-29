@@ -20,33 +20,3 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # locals.
-$dbName = Get-NewResource name
-$scriptPath = Get-NewResource script_path
-$serverName = Get-NewResource server_name
-
-#check inputs.
-$Error.Clear()
-if (($dbName -eq $Null) -or ($dbName -eq ""))
-{
-    Write-Error "Invalid or missing database name".
-    exit 100
-}
-if (($scriptPath -eq $Null) -or ($scriptPath -eq ""))
-{
-    Write-Error "No SQL commands provided in resource".
-    exit 101
-}
-if (($serverName -eq $Null) -or ($serverName -eq ""))
-{
-    Write-Error "Invalid or missing server name".
-    exit 102
-}
-if (0 -ne $Error.Count)
-{
-    exit 103
-}
-
-# note use of sqlcmd assumes SQL Server/Express installation puts tools on path.
-sqlcmd -S $serverName -d $dbName -i "$scriptPath" | Out-Null
-
-exit $LastExitCode
