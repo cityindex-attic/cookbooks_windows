@@ -89,6 +89,7 @@
   },
   "recipes": {
     "ciapi_in_a_box::default": "Downloads and configures all the CIAPI-in-a-box components",
+"ciapi_in_a_box::update_manifest": "Pulls down the latest manifest",
     "ciapi_in_a_box::update_RESTWebServices": "Backs up the BlogEngine database to a local machine directory.",
     "ciapi_in_a_box::update_CIAPI.docs": "Restores the BlogEngine database from a local machine directory."
   },
