@@ -1,0 +1,1 @@
+svn export --force --username ciapiinaboxinstaller --password xITVsI https://cityindex.unfuddle.com/svn/cityindex_ciapi-in-a-box/TestData/JavaCamelRoutes JavaCamelRoutes/
